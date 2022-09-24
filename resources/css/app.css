@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .mainLayout{
+        @apply bg-secBlack w-full h-screen flex items-center justify-center;
+    }
+    .mainWrapper{
+        @apply w-[75%] mx-auto
+    }
+    .listFlex{
+        @apply flex justify-around
+    }
+    .navText{
+        @apply font-poppins font-[500] text-white text-[30px]
+    }
+    .navActive{
+        @apply text-red-500 animate-pulse
+    }
+}
