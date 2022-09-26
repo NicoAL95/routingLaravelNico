@@ -6,13 +6,27 @@
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
 </head>
-<body class="bg-superWhite">
+<body class="bg-superWhite  overflow-x-hidden">
   <header>
     <nav>
       <div>
         <a href="Nico" class="navLogo">Nico Abel Laia</a>
       </div>
-      <ul class="navLinks">
+      <div class="xl:hidden cursor-pointer" id="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>        
+      </div>
+      <ul class="navLinks right-[-50%]" id="navLinks">
+        <li class="flex justify-between space-x-10 xl:hidden">
+          <h1>Nico Abel Laia</h1>
+          <div class="cursor-pointer" id="navClose">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            
+          </div>
+        </li>
         <li>
           <a href="#" class="navLink active">Home</a>
         </li>

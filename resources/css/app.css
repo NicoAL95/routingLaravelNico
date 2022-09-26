@@ -29,7 +29,7 @@
         @apply font-[700] text-[35px] text-bluPurple
     }
     .navLinks{
-        @apply absolute top-0 right-0 flex bg-superWhite space-y-8 flex-col h-screen text-center p-5 border-l xl:flex-row xl:static xl:h-fit xl:space-x-3 xl:space-y-0  xl:bg-transparent xl:p-0 xl:shadow-none
+        @apply absolute top-0 flex bg-superWhite space-y-8 flex-col h-screen text-center p-5 border-l xl:flex-row xl:static xl:h-fit xl:space-x-3 xl:space-y-0  xl:bg-transparent xl:p-0 xl:shadow-none transition-all
     }
     .navLink{
         @apply font-[500] text-[16px] tracking-wide py-3 px-5 text-bluGrey
