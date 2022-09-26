@@ -10,4 +10,9 @@ class NicoController extends Controller
     public function about() {
         return view('aboutPage.about');
     }
+
+    // About
+    public function news() {
+        return view('newsPage.news');
+    }
 }

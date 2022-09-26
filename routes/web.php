@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+// About
 Route::get('/about', [NicoController::class, 'about']);
+
+// News
+Route::get('/news', [NicoController::class, 'news']);

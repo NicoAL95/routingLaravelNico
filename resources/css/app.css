@@ -49,6 +49,9 @@
     #communityHover{
         @apply shadow-md transition-all
     }
+    .hidNav{
+        @apply font-[600] text-bluPurple
+    }
     /* End Navbar */
 
     /* Body */
@@ -62,7 +65,7 @@
         @apply font-poppins text-[18px] font-[400] text-darkBlue
     }
     .headTitle{
-        @apply font-poppins text-[55px] font-[700] text-darkBlue
+        @apply font-poppins text-[35px] sg:text-[40px] xg:text-[55px] font-[700] text-darkBlue
     }
     .headMedium{
         @apply mt-4 font-poppins text-[20px] font-[400] text-highGrey

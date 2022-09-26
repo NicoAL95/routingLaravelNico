@@ -19,7 +19,7 @@
       </div>
       <ul class="navLinks right-[-50%]" id="navLinks">
         <li class="flex justify-between space-x-10 xl:hidden">
-          <h1>Nico Abel Laia</h1>
+          <h1 class="hidNav">Nico Abel Laia</h1>
           <div class="cursor-pointer" id="navClose">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -28,13 +28,13 @@
           </div>
         </li>
         <li>
-          <a href="#" class="navLink active">Home</a>
+          <a href="/" class="navLink {{ Request::is('/') ? 'active' : 'navLink' }}">Home</a>
         </li>
         <li>
-          <a href="#" class="navLink">About</a>
+          <a href="/about" class="navLink {{ Request::is('about') ? 'active' : 'navLink' }}">About</a>
         </li>
         <li>
-          <a href="#" class="navLink">News</a>
+          <a href="/news" class="navLink {{ Request::is('news') ? 'active' : 'navLink' }}">News</a>
         </li>
         <li class="relative">
           <a href="#" class="navLink" id="recipe">Recipes</a>
@@ -55,7 +55,7 @@
 
         </li>
         <li>
-          <a href="#" class="navLink">Contact</a>
+          <a href="/contact" class="navLink {{ Request::is('contact') ? 'active' : 'navLink' }}">Contact</a>
         </li>
       </ul>
     </nav>
