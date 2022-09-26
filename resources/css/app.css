@@ -20,4 +20,52 @@
     .navActive{
         @apply text-red-500 animate-pulse
     }
+
+    /* Navbar */
+    nav{
+        @apply px-[80px] py-[40px] font-poppins flex items-center justify-between
+    }
+    .navLogo{
+        @apply font-[700] text-[35px] text-bluPurple
+    }
+    .navLinks{
+        @apply absolute top-0 right-0 flex bg-superWhite space-y-8 flex-col h-screen text-center p-5 border-l xl:flex-row xl:static xl:h-fit xl:space-x-3 xl:space-y-0  xl:bg-transparent xl:p-0 xl:shadow-none
+    }
+    .navLink{
+        @apply font-[500] text-[16px] tracking-wide py-3 px-5 text-bluGrey
+    }
+    .active{
+        @apply bg-softGreen rounded-md font-[600]
+    }
+    .navHover{
+        @apply absolute top-[120%] left-0 w-full h-fit flex flex-col 
+    }
+    .hovItem{
+        @apply p-3 bg-gray-50 hover:bg-softGreen
+    }
+    #recipeHover{
+        @apply shadow-md transition-all
+    }
+    #communityHover{
+        @apply shadow-md transition-all
+    }
+    /* End Navbar */
+
+    /* Body */
+    .bodySplit{
+        @apply grid grid-rows-1 grid-cols-12
+    }
+    .bodyCol{
+        @apply col-span-6
+    }
+    .headSmall{
+        @apply font-poppins text-[18px] font-[400] text-darkBlue
+    }
+    .headTitle{
+        @apply font-poppins text-[55px] font-[700] text-darkBlue
+    }
+    .headMedium{
+        @apply mt-4 font-poppins text-[20px] font-[400] text-highGrey
+    }
+    /* End Body */
 }

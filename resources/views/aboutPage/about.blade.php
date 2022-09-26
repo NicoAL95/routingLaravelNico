@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1 class="text-xl text-center">
-    <a href="" @if(!Route::is('/')) class="text-red-500" @endif>Ini About Ges</a>
+    <a href="" >Ini About Ges</a>
   </h1>
 </body>
 </html>
