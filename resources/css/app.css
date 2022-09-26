@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .mainLayout{
+        @apply bg-secBlack w-full h-screen flex items-center justify-center;
+    }
+    .mainWrapper{
+        @apply w-[75%] mx-auto
+    }
+    .listFlex{
+        @apply flex justify-around
+    }
+    .navText{
+        @apply font-poppins font-[500] text-white text-[30px]
+    }
+    .navActive{
+        @apply text-red-500 animate-pulse
+    }
+
+    /* Navbar */
+    nav{
+        @apply px-[80px] py-[40px] font-poppins flex items-center justify-between
+    }
+    .navLogo{
+        @apply font-[700] text-[35px] text-bluPurple
+    }
+    .navLinks{
+        @apply absolute top-0 flex bg-superWhite space-y-8 flex-col h-screen text-center p-5 border-l xl:flex-row xl:static xl:h-fit xl:space-x-3 xl:space-y-0  xl:bg-transparent xl:p-0 xl:shadow-none transition-all
+    }
+    .navLink{
+        @apply font-[500] text-[16px] tracking-wide py-3 px-5 text-bluGrey
+    }
+    .active{
+        @apply bg-softGreen rounded-md font-[600]
+    }
+    .navHover{
+        @apply absolute top-[120%] left-0 w-full h-fit flex flex-col 
+    }
+    .hovItem{
+        @apply p-3 bg-gray-50 hover:bg-softGreen
+    }
+    #recipeHover{
+        @apply shadow-md transition-all
+    }
+    #communityHover{
+        @apply shadow-md transition-all
+    }
+    .hidNav{
+        @apply font-[600] text-bluPurple
+    }
+    /* End Navbar */
+
+    /* Body */
+    .bodySplit{
+        @apply grid grid-rows-1 grid-cols-12
+    }
+    .bodyCol{
+        @apply col-span-6
+    }
+    .headSmall{
+        @apply font-poppins text-[18px] font-[400] text-darkBlue
+    }
+    .headTitle{
+        @apply font-poppins text-[35px] sg:text-[40px] xg:text-[55px] font-[700] text-darkBlue
+    }
+    .headMedium{
+        @apply mt-4 font-poppins text-[20px] font-[400] text-highGrey
+    }
+    /* End Body */
+}
