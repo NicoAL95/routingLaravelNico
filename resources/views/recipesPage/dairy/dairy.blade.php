@@ -1,3 +1,10 @@
+<!--
+
+    Mohon NPM RUN DEV Sebelum PHP ARTISAN SERVE menjalankan program
+    Terimakasih
+
+-->
+
 @extends('layout.layout')
 @section('title', 'Dairy | Nico Abel Laia')
 @section('content')
@@ -20,3 +27,10 @@
     </section>
   </main>
 @endsection
+
+<!--
+
+    Mohon NPM RUN DEV Sebelum PHP ARTISAN SERVE menjalankan program
+    Terimakasih
+
+-->

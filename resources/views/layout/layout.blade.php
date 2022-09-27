@@ -1,3 +1,10 @@
+<!--
+
+    Mohon NPM RUN DEV Sebelum PHP ARTISAN SERVE menjalankan program
+    Terimakasih
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    @vite('resources/js/custom.js')
     <title>@yield('title')</title>
 </head>
 <body class="overflow-x-hidden 
@@ -91,3 +99,10 @@
     </footer>
 </body>
 </html>
+
+<!--
+
+    Mohon NPM RUN DEV Sebelum PHP ARTISAN SERVE menjalankan program
+    Terimakasih
+
+-->
