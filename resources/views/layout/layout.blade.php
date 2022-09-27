@@ -1,11 +1,21 @@
+<!--
+
+    Mohon NPM RUN DEV Sebelum PHP ARTISAN SERVE menjalankan program
+    Terimakasih
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="title" content="Tugas Nico Abel Laia | Pemrograman Website"/>
+    <link rel="icon" type="image/x-icon" href="/img/png/nicoAbelLaia.png">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    @vite('resources/js/custom.js')
     <title>@yield('title')</title>
 </head>
 <body class="overflow-x-hidden 
@@ -48,19 +58,19 @@
               </div>
             </li>
             <li>
-              <a href="/" class="navLink {{ Request::is('/') ? 'active' : 'navLink' }}">Home</a>
+              <a href="/" class="navLink {{ Request::is('/') ? 'active' : '' }}">Home</a>
             </li>
             <li>
-              <a href="/about" class="navLink {{ Request::is('about') ? 'active' : 'navLink' }}">About</a>
+              <a href="/about" class="navLink {{ Request::is('about') ? 'active' : '' }}">About</a>
             </li>
             <li>
-              <a href="/news" class="navLink {{ Request::is('news') ? 'active' : 'navLink' }}">News</a>
+              <a href="/news" class="navLink {{ Request::is('news') ? 'active' : '' }}">News</a>
             </li>
             <li class="relative">
               <a href="#" class="navLink {{ Request::is('recipes/fruit') ? 'active' : '' }} {{ Request::is('recipes/dairy') ? 'active' : '' }}" id="recipe">Recipes</a>
     
               <div class="hidden" id="recipeHover">
-                <a href="/recipes/fruit" class="navLink hovItem rounded-t-md {{ Request::is('recipes/fruit') ? 'active' : 'navLink' }}">Fruit</a>
+                <a href="/recipes/fruit" class="navLink hovItem rounded-t-md {{ Request::is('recipes/fruit') ? 'active' : '' }}">Fruit</a>
                 <a href="/recipes/dairy" class="hovItem rounded-b-md">Dairy</a>
               </div>
     
@@ -75,7 +85,7 @@
     
             </li>
             <li>
-              <a href="/contact" class="navLink {{ Request::is('contact') ? 'active' : 'navLink' }}">Contact</a>
+              <a href="/contact" class="navLink {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
             </li>
           </ul>
           </ul>
@@ -91,3 +101,10 @@
     </footer>
 </body>
 </html>
+
+<!--
+
+    Mohon NPM RUN DEV Sebelum PHP ARTISAN SERVE menjalankan program
+    Terimakasih
+
+-->
