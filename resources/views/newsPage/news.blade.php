@@ -6,7 +6,7 @@
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
 </head>
-<body class="bg-[#FFFEF4] overflow-x-hidden">
+<body class="bg-[#FFFEDE] overflow-x-hidden">
   <header>
     <nav>
       <div>
@@ -17,7 +17,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>        
       </div>
-      <ul class="navLinks right-[-50%] bg-[#FFFEF4] xl:bg-transparent" id="navLinks">
+      <ul class="navLinks right-[-50%] bg-[#FFFEDE] xl:bg-transparent" id="navLinks">
         <li class="flex justify-between space-x-10 xl:hidden">
           <h1 class="hidNav">Nico Abel Laia</h1>
           <div class="cursor-pointer" id="navClose">
@@ -37,25 +37,25 @@
           <a href="/news" class="navLink {{ Request::is('news') ? 'active' : 'navLink' }}">News</a>
         </li>
         <li class="relative">
-          <a href="#" class="navLink" id="recipe">Recipes</a>
+          <a href="#" class="navLink {{ Request::is('recipes/fruit') ? 'active' : '' }} {{ Request::is('recipes/dairy') ? 'active' : '' }}" id="recipe">Recipes</a>
 
           <div class="hidden" id="recipeHover">
-            <a href="#" class="hovItem rounded-t-md">Fruit</a>
-            <a href="#" class="hovItem rounded-b-md">Diary</a>
+            <a href="/recipes/fruit" class="navLink hovItem rounded-t-md {{ Request::is('recipes/fruit') ? 'active' : 'navLink' }}">Fruit</a>
+            <a href="/recipes/dairy" class="hovItem rounded-b-md">Dairy</a>
           </div>
 
         </li>
         <li class="relative">
-          <a href="#" class="navLink" id="community">Community</a>
+          <a href="#" class="navLink {{ Request::is('community/forum') ? 'active' : '' }} {{ Request::is('community/gallery') ? 'active' : '' }}" id="community">Community</a>
 
           <div class="hidden" id="communityHover">
-            <a href="#" class="hovItem rounded-t-md">Forum</a>
-            <a href="#" class="hovItem rounded-b-md">Gallery</a>
+            <a href="/community/forum" class="hovItem rounded-t-md">Forum</a>
+            <a href="/community/gallery" class="hovItem rounded-b-md">Gallery</a>
           </div>
 
         </li>
         <li>
-          <a href="#" class="navLink">Contact</a>
+          <a href="/contact" class="navLink {{ Request::is('contact') ? 'active' : 'navLink' }}">Contact</a>
         </li>
       </ul>
     </nav>

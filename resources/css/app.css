@@ -44,10 +44,10 @@
         @apply p-3 bg-gray-50 hover:bg-softGreen
     }
     #recipeHover{
-        @apply shadow-md transition-all
+        @apply shadow-md transition-all z-10
     }
     #communityHover{
-        @apply shadow-md transition-all
+        @apply shadow-md transition-all z-10
     }
     .hidNav{
         @apply font-[600] text-bluPurple

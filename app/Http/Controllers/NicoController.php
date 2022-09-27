@@ -11,8 +11,29 @@ class NicoController extends Controller
         return view('aboutPage.about');
     }
 
-    // About
+    // News
     public function news() {
         return view('newsPage.news');
+    }
+
+    // Contact
+    public function contact() {
+        return view('contactPage.contact');
+    }
+
+    // Recipes
+    public function recFruit() {
+        return view('recipesPage.fruit.fruit');
+    }
+    public function recDairy() {
+        return view('recipesPage.dairy.dairy');
+    }
+
+    // Community
+    public function comForum() {
+        return view('communityPage.forum.forum');
+    }
+    public function comGallery() {
+        return view('communityPage.gallery.gallery');
     }
 }

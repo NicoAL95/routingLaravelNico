@@ -37,26 +37,27 @@
           <a href="/news" class="navLink {{ Request::is('news') ? 'active' : 'navLink' }}">News</a>
         </li>
         <li class="relative">
-          <a href="#" class="navLink" id="recipe">Recipes</a>
+          <a href="#" class="navLink {{ Request::is('recipes/fruit') ? 'active' : '' }} {{ Request::is('recipes/dairy') ? 'active' : '' }}" id="recipe">Recipes</a>
 
           <div class="hidden" id="recipeHover">
-            <a href="#" class="hovItem rounded-t-md">Fruit</a>
-            <a href="#" class="hovItem rounded-b-md">Diary</a>
+            <a href="/recipes/fruit" class="navLink hovItem rounded-t-md {{ Request::is('recipes/fruit') ? 'active' : 'navLink' }}">Fruit</a>
+            <a href="/recipes/dairy" class="hovItem rounded-b-md">Dairy</a>
           </div>
 
         </li>
         <li class="relative">
-          <a href="#" class="navLink" id="community">Community</a>
+          <a href="#" class="navLink {{ Request::is('community/forum') ? 'active' : '' }} {{ Request::is('community/gallery') ? 'active' : '' }}" id="community">Community</a>
 
           <div class="hidden" id="communityHover">
-            <a href="#" class="hovItem rounded-t-md">Forum</a>
-            <a href="#" class="hovItem rounded-b-md">Gallery</a>
+            <a href="/community/forum" class="hovItem rounded-t-md">Forum</a>
+            <a href="/community/gallery" class="hovItem rounded-b-md">Gallery</a>
           </div>
 
         </li>
         <li>
           <a href="/contact" class="navLink {{ Request::is('contact') ? 'active' : 'navLink' }}">Contact</a>
         </li>
+      </ul>
       </ul>
     </nav>
   </header>
