@@ -23,13 +23,13 @@
 
     /* Navbar */
     nav{
-        @apply px-[80px] py-[40px] font-poppins flex items-center justify-between
+        @apply px-[50px] ms:px-[80px] py-[40px] font-poppins flex items-center justify-between
     }
     .navLogo{
-        @apply font-[700] text-[35px] text-bluPurple
+        @apply font-[700] text-[30px] ms:text-[35px] text-bluPurple
     }
     .navLinks{
-        @apply absolute top-0 flex bg-superWhite space-y-8 flex-col h-screen text-center p-5 border-l xl:flex-row xl:static xl:h-fit xl:space-x-3 xl:space-y-0  xl:bg-transparent xl:p-0 xl:shadow-none transition-all
+        @apply fixed top-0 flex bg-superWhite space-y-8 flex-col h-screen text-center p-5 border-l xl:flex-row xl:static xl:h-fit xl:space-x-3 xl:space-y-0  xl:bg-transparent xl:p-0 xl:shadow-none transition-all
     }
     .navLink{
         @apply font-[500] text-[16px] tracking-wide py-3 px-5 text-bluGrey
@@ -44,10 +44,10 @@
         @apply p-3 bg-gray-50 hover:bg-softGreen
     }
     #recipeHover{
-        @apply shadow-md transition-all
+        @apply shadow-md transition-all z-10
     }
     #communityHover{
-        @apply shadow-md transition-all
+        @apply shadow-md transition-all z-10
     }
     .hidNav{
         @apply font-[600] text-bluPurple
@@ -59,16 +59,25 @@
         @apply grid grid-rows-1 grid-cols-12
     }
     .bodyCol{
-        @apply col-span-6
+        @apply col-span-12 ms:col-span-6
     }
     .headSmall{
         @apply font-poppins text-[18px] font-[400] text-darkBlue
     }
     .headTitle{
-        @apply font-poppins text-[35px] sg:text-[40px] xg:text-[55px] font-[700] text-darkBlue
+        @apply font-poppins text-[30px] sm:text-[35px] sg:text-[40px] xg:text-[55px] font-[700] text-darkBlue
     }
     .headMedium{
-        @apply mt-4 font-poppins text-[20px] font-[400] text-highGrey
+        @apply mt-4 font-poppins text-[16px] sm:text-[20px] font-[400] text-highGrey
+    }
+    .colPad{
+        @apply p-[50px] ms:pl-[80px]
     }
     /* End Body */
+
+    /* Footer */
+    .footer{
+        @apply font-poppins w-full py-10 flex justify-center items-center font-[600] text-[14px] text-darkBlue
+    }
+    /* End Footer */
 }
