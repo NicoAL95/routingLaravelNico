@@ -19,11 +19,11 @@ const navLinks = document.getElementById('navLinks');
 const navClose = document.getElementById('navClose');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('right-[-50%]');
+    navLinks.classList.toggle('right-[-75%]');
     navLinks.classList.toggle('right-0');
 })
 
 navClose.addEventListener('click', () => {
-    navLinks.classList.toggle('right-[-50%]');
+    navLinks.classList.toggle('right-[-75%]');
     navLinks.classList.toggle('right-0');
 })
